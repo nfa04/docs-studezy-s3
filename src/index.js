@@ -94,9 +94,9 @@ server.on("connection", async (socket) => {
          // When user wants to publish, create an html doc from it which is then published
         var html = await convertDeltaToHtml(documentDeltas[socket.handshake.auth['fileID']]);
 
-        fs.writeFile(fileName + ".html", html, 'utf-8', err => {
+        /*fs.writeFile(fileName + ".html", html, 'utf-8', err => {
             console.log(err);
-        });
+        });*/
         
         var command = new PutObjectCommand({
 		    Bucket: awsBucket,

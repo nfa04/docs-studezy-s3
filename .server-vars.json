@@ -1,0 +1,13 @@
+{
+        "corsAllow": "THE URL OF YOUR MAIN COMPONENT",
+        "db": {
+                "host": "YOUR MYSQL HOST",
+                "user":"YOUR MYSQL USERNAME",
+                "password":"YOUR MYSQL PASSWORD",
+                "database" : "YOUR DATABASE NAME"
+        },
+        "aws": {
+                "bucket": "NAME OF YOUR AWS S3 BUCKET",
+                "region": "REGION YOUR BUCKET IS IN"
+        }
+}

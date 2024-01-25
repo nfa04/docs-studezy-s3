@@ -106,7 +106,7 @@ server.on("connection", async (socket) => {
 	s3client.send(command);
 
         // Make sure the file is readable to the webserver (may not be by default)
-        fs.chmod(fileName + '.html', 777, err => console.log(err));
+        // fs.chmod(fileName + '.html', 777, err => console.log(err));
     });
 
     socket.on("rename", newName => {
